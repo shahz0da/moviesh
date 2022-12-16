@@ -7,22 +7,16 @@ import './whatsPopular.css'
 function WhatsPopular() {
 
     const [movies, setMovies] = useState([])
+    const [active, setActive] = useState('popular')
 
     function getData(value) {
         getMovies.getMoviesByCategory(value || "popular").then(json => {
             setMovies(json.data.results)
-            console.log(json.data.results, 'aaaaaaa');
-            console.log('salom', value);
         })
     }
-
     useEffect(() => {
         getData()
-
     }, [])
-
-
-    const [active, setActive] = useState('popular')
 
     return (
         <div className='container '>
@@ -42,7 +36,7 @@ function WhatsPopular() {
                         return (
                             <div key={index} className='streaming'>
                                 <div>
-                                    <Link to={`/movieDetails/${item.id}`} style={{color: "black", listStyleType: "none", textDecoration: "none"}}>
+                                    <Link to={`/movieDetails/${item.id}`} style={{ color: "black", listStyleType: "none", textDecoration: "none" }}>
                                         <img className='img_streaming' src={BaseUrlImages + file_size + item.poster_path} alt={item.title} />
                                         <h6>{item.title}</h6>
                                         <h6>{item.release_date}</h6>

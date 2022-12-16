@@ -7,8 +7,6 @@ import '../Movies/popular.css'
 
 function TVShows() {
   let params = useParams()
-  console.log(params);
-
   const [movies, setMovies] = useState([])
   const [url, seturl] = useState('')
 
@@ -18,7 +16,6 @@ function TVShows() {
       getMovies.getMoviesByCategory(params.url).then(json => {
         setMovies(json.data.results)
         seturl(params)
-        console.log('salom111', json, params);
       })
     }
 

@@ -7,12 +7,11 @@ import './whatsPopular.css'
 function Trending() {
 
     const [movies, setMovies] = useState([])
+    const [active, setActive] = useState("popular")
 
     function getData(value) {
         getMovies.getMoviesByCategory(value || "popular").then(json => {
             setMovies(json.data.results)
-            console.log(json.data.results, 'aaaaaaa');
-            console.log('salom', value);
         })
     }
 
@@ -20,9 +19,6 @@ function Trending() {
         getData()
 
     }, [])
-
-
-    const [active, setActive] = useState("popular")
 
     return (
         <div className='container '>

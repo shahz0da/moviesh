@@ -26,5 +26,3 @@ class getPopularPeople {
 }
 
 export default new getPopularPeople()
-
-// https://api.themoviedb.org/3/person/{person_id}?api_key=<<api_key>>&language=en-US

@@ -1,9 +1,6 @@
 import { API_Key, client } from './getData'
 
 class getTVShows {
-
-    // https://api.themoviedb.org/3/tv/{tv_id}?api_key=<<api_key>>&language=en-US
-
     getTVShowsByCategory(categoryName) {
         let response = client.get(`tv/${categoryName}?api_key=${API_Key}&language=en-US&page=1`)
         .then(ress => {

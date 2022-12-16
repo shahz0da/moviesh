@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { API_Key, BaseUrl, BaseUrlImages, file_size } from '../../utils/getData'
+import { BaseUrlImages, file_size } from '../../utils/getData'
 import getMovies from '../../utils/getMovies'
 import './latestTrailers.css'
 
@@ -8,20 +8,18 @@ function LatestTrailers() {
 
     const [movies, setMovies] = useState([])
     const [photo, setPhoto] = useState('')
+    const [active, setActive] = useState("popular")
 
     function getData(value) {
         getMovies.getMoviesByCategory(value || "popular").then(json => {
             setMovies(json.data.results)
-            console.log(json.data.results);
             setPhoto(`${BaseUrlImages + file_size + json.data.results[0].backdrop_path}`)
         })
     }
-
     useEffect(() => {
         getData()
 
     }, [])
-    const [active, setActive] = useState("popular")
 
     return (
         <div className='container latest'>

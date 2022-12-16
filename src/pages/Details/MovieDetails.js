@@ -8,17 +8,15 @@ import { BaseUrlImages, file_size } from '../../utils/getData';
 function MovieDetails() {
     const [detail, setDetail] = useState([])
     const params = useParams()
-    console.log(params, "buparams");
 
     useEffect(() => {
         getData()
         function getData() {
-            getMovies.getMoviesDetail(params.id).then(json => {
-                console.log('BUDATA', json.data);
+            getMovies.getMoviesDetail((params.id)).then(json => {
                 setDetail(json.data)
             })
         }
-    }, [])
+    }, [params.id])
     
   return (
     <div>

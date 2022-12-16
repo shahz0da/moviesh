@@ -5,21 +5,17 @@ import getSearchData from '../../utils/getSearchData';
 
 function Search() {
   let params = useParams()
-  console.log(params, 'params');
-
   const [data, setData] = useState([])
-
 
   useEffect(() => {
     getData()
     function getData() {
       getSearchData.getSearchMovies(params.query).then(json => {
         setData(json.data.results)
-        console.log("serch", json.data.results);
       })
     }
 
-  }, [])
+  }, [params.query])
 
   return (
     <div>

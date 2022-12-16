@@ -7,8 +7,6 @@ import './popular.css'
 
 function Popular() {
   let params = useParams()
-  console.log(params);
-
   const [movies, setMovies] = useState([])
   const [url, seturl] = useState('')
 
@@ -18,10 +16,8 @@ function Popular() {
       getMovies.getMoviesByCategory(params.url).then(json => {
         setMovies(json.data.results)
         seturl(params)
-        console.log('salom', json, params);
       })
     }
-
   }, [params])
   return (
     <div>

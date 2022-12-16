@@ -8,17 +8,15 @@ import './movieDetails.css'
 function TVDetails() {
     const [detail, setDetail] = useState([])
     const params = useParams()
-    console.log(params, "buparams");
 
     useEffect(() => {
         getData()
         function getData() {
             getTVShows.getTVDetail(params.id).then(json => {
-                console.log('BUDATA111', json.data);
                 setDetail(json.data)
             })
         }
-    }, [])
+    }, [params.id])
     
   return (
     <div>

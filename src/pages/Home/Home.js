@@ -1,5 +1,4 @@
 import React from 'react'
-// import FreeToWatch from './FreeToWatch'
 import LatestTrailers from './LatestTrailers'
 import Trending from './Trending'
 import Welcome from './Welcome'
@@ -10,7 +9,6 @@ function Home() {
     <div>
         <Welcome/>
         <WhatsPopular/>
-        {/* <FreeToWatch/> */}
         <LatestTrailers />
         <Trending/>
     </div>

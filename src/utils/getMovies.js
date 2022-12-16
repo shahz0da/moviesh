@@ -1,7 +1,5 @@
 import { API_Key, client } from './getData'
 
-// https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
-
 class getMovies {
 
     getMoviesByCategory(categoryName) {

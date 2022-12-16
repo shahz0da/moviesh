@@ -7,13 +7,11 @@ import './popularPeople.css'
 function PopularPeople() {
   const [people, setPeople] = useState([])
  
-
   useEffect(() => {
     getPeople()
     function getPeople() {
       getPopularPeople.getPeople().then(json => {
         setPeople(json.data.results)
-        console.log(json);
       })
     }
   }, [])

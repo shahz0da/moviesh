@@ -6,13 +6,8 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 
-//  https://api.themoviedb.org/3/person/{person_id}?api_key=<<api_key>>&language=en-US
-// https://api.themoviedb.org/3/person/11?api_key=51cc7f5f459038d8f6fd27150449d6a1&language=en-US
-
-
 function PeopleDetail() {
   const params = useParams()
-  console.log(params);
   const [detailPeople, setDetailPeople] = useState([])
 
   useEffect(() => {

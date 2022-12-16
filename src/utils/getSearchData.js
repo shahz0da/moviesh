@@ -15,8 +15,3 @@ class getSearchData {
 }
 
 export default new getSearchData()
-
-
-//  https://api.themoviedb.org/3/search/company?api_key=<<api_key>>&query=spiderman&page=1
-// https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&page=1&include_adult=false
-// https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&query=1
