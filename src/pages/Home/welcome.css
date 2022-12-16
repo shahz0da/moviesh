@@ -1,0 +1,61 @@
+.welcome {
+    background-image: url("https://bobby24.com/wp-content/uploads/2022/08/Minions-as-Bruce-Lee.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    margin: 0 120px;
+}
+
+.search {
+    display: flex;
+    padding: 0 50px 60px 50px;
+}
+
+.input {
+    width: 100%;
+    border-radius: 25px;
+    padding: 12px 30px;
+    border: none;
+    font-size: large;
+}
+
+
+
+.buttons {
+    border-radius: 25px;
+    padding: 12px 30px;
+    background-color: rgb(1, 180, 221);
+    color: #fff;
+    border: none;
+    font-size: large;
+    translate: -50px;
+}
+
+.buttons:hover {
+    color: black;
+}
+
+.p {
+    font-size: 50px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.pp {
+    font-size: 30px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.forP {
+    padding: 50px;
+    align-items: center;
+    
+}
+.link {
+    text-decoration: none;
+}

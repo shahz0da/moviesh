@@ -1,0 +1,46 @@
+.whatsPopular {
+    margin: 20px 120px;
+    display: flex;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.divClick {
+    border-radius: 25px;
+    border: 1px solid rgb(13, 37, 63);
+    width: auto;
+    margin-left: 20px;
+}
+
+.click{
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 20px;
+    color: rgb(1, 180, 228);
+    background-color: rgb(13, 37, 63);
+}
+
+.noclick {
+    border-radius: 25px;
+    border: none;
+    padding: 5px 20px;
+    color: rgb(13, 37, 63);
+}
+
+.carousel_movies {
+    display: flex;
+    overflow-x: scroll;
+    height: 400px;
+}
+
+.streaming {
+    margin: 10px;
+    
+}
+.img_streaming {
+    width: 150px;
+    border-radius: 10px;
+}

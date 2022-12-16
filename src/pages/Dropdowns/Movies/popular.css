@@ -1,0 +1,12 @@
+.bigbox {
+    margin-top: 50px;
+}
+.box {
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 10px;
+}
+.movies {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+}
+

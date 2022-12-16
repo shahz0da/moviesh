@@ -1,0 +1,20 @@
+.forli {
+    text-decoration: none;
+    color: white;
+}
+.forul {
+    text-decoration: none;
+    color: white;
+}
+.forul p{
+    font-size: large;
+    font-weight: bold;
+}
+.footer {
+    background-color: rgb(13, 37, 63);
+    padding: 50px;
+    padding-left: 200px;
+}
+.footerlogo {
+    width: 150px;
+}
